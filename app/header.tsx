@@ -3,10 +3,10 @@ import React, { use } from "react";
 import Link from "next/link";
 import ThemeToggle from "./Toggle";
 import { usePathname } from "next/navigation";
+import { FaXTwitter } from "react-icons/fa6";
 
 function Header() {
   const pathname = usePathname();
-  console.log("HERE", pathname);
 
   return (
     <header className="flex items-center justify-between">
@@ -38,7 +38,7 @@ function Header() {
           rel="noopener noreferrer"
           className="inline-flex hover:bg-gray-200 dark:hover:bg-[#313131] active:bg-gray-300 dark:active:bg-[#242424] items-center p-2 rounded-sm transition-[background-color] whitespace-nowrap -mr-2"
         >
-          Follow on X
+          <FaXTwitter className="inline-block mr-1" />
         </a>
       </nav>
     </header>
