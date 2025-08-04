@@ -1,0 +1,27 @@
+---
+What’s New in ECMAScript 2025
+---
+
+# ECMAScript 2025: What's New?
+
+JavaScript evolves every year through updates to **ECMAScript**, a standardized scripting language maintained by <a href="https://ecma-international.org/technical-committees/tc39/" target="_blank" rel="noopener noreferrer">**ECMA International**</a>. The **TC39** committee—a group of JavaScript engine developers, browser vendors, and community experts—proposes and finalizes changes.
+
+Fun fact: ECMA stands for _European Computer Manufacturers Association_ and it’s based in Switzerland.
+
+## Why It Matters
+
+New ECMAScript versions make JavaScript safer, faster, and easier to write. Let’s look at what ECMAScript 2025 (also called ES16) is introducing.
+
+## Highlights from ES2025
+
+1. **Immutable array methods**  
+   New methods like `.toSorted()`, `.toReversed()`, and others return modified **copies** of arrays instead of changing the original.
+
+2. **Symbols as WeakMap keys**  
+   Symbols can now be used as keys in `WeakMap`—improving encapsulation for libraries and frameworks.
+
+3. **JSON modules**  
+   Native support for importing `.json` files in ECMAScript modules (ESM). You can now do:
+   ```js
+   import data from "./config.json" assert { type: "json" };
+   ```
